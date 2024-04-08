@@ -1,0 +1,63 @@
+.paymentContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .paymentBox {
+    background-color: #0a0a0a;
+    max-width: 80%;
+    min-height: 600px;
+    border: 20px solid #000;
+    border-radius: 30px;
+    box-shadow: 0px 0px 5px #0a0a0a;
+    .header {
+      min-height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      .headerName {
+        color: white;
+        font-family: "poppins";
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin-top: 0;
+      }
+      .headerName::first-letter {
+        color: #c9fd03 !important;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 10px 20px;
+      .contentTitle {
+        font-family: "poppins";
+        color: white;
+        letter-spacing: 2px;
+        margin-top: 0;
+      }
+      .contentTitle::after {
+        content: ".";
+        color: #c9fd03;
+      }
+      .contentText {
+        font-family: "poppins";
+        color: white;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+      }
+    }
+    .paymentArea {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .paymentCard {
+        min-height: 80%;
+        width: 80%;
+        border-radius: 30px;
+      }
+    }
+  }
+}
